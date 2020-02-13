@@ -1,6 +1,7 @@
 from flask import request, redirect
 from flask import Blueprint, render_template
-from posts.models import db, BlogPost
+from posts.models import BlogPost
+from connectors.mysql_extension import db
 
 blog_routes = Blueprint('blog_routes', __name__, template_folder='templates')
 

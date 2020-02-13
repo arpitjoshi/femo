@@ -1,6 +1,5 @@
 from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
-db = SQLAlchemy()
+from connectors.mysql_extension import db
 
 
 class BlogPost(db.Model):

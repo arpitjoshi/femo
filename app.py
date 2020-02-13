@@ -1,6 +1,6 @@
 from flask import Flask, render_template
-from posts.models import db
 from posts.routes import blog_routes
+from connectors.mysql_extension import db
 
 app = Flask(__name__)
 app.config.from_object('config.Config')
